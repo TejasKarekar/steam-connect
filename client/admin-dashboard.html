@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StemConnect Admin Dashboard</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">StemConnect Admin</div>
+            <button id="logout-btn">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="admin" class="admin">
+            <h2>Admin Dashboard</h2>
+            <div class="admin-grid">
+                <div class="admin-card">
+                    <h3>Donor Management</h3>
+                    <button id="view-donors">View Donors</button>
+                    <button id="approve-donors">Approve New Donors</button>
+                </div>
+                <div class="admin-card">
+                    <h3>Patient Management</h3>
+                    <button id="view-patients">View Patients</button>
+                </div>
+                <div class="admin-card">
+                    <h3>Reports</h3>
+                    <button id="generate-report">Generate Matching Report</button>
+                </div>
+            </div>
+            <div id="admin-content"></div>
+        </section>
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

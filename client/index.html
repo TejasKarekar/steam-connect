@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StemConnect - Connecting Stem Cell Donors with Patients</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">StemConnect</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#search">Patient Search</a></li>
+                <li><a href="#admin">Admin</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="animated-text">Connecting Stem Cell Donors with Patients</h1>
+                <p class="animated-text">Join our platform to make a life-changing difference</p>
+                <a href="#register" class="cta-button pulse">Become a Donor</a>
+            </div>
+            <div class="hero-animation"></div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="icon-registration"></i>
+                    <h3>Donor Registration</h3>
+                    <p>Easy and secure registration process for donors</p>
+                </div>
+                <div class="feature-card">
+                    <i class="icon-search"></i>
+                    <h3>Patient Search & Matching</h3>
+                    <p>Advanced HLA matching for patients</p>
+                </div>
+                <div class="feature-card">
+                    <i class="icon-workflow"></i>
+                    <h3>Donation Workflow</h3>
+                    <p>Streamlined process with real-time notifications</p>
+                </div>
+                <div class="feature-card">
+                    <i class="icon-file"></i>
+                    <h3>File Management</h3>
+                    <p>Secure upload and storage of medical documents</p>
+                </div>
+                <div class="feature-card">
+                    <i class="icon-dashboard"></i>
+                    <h3>Admin Dashboard</h3>
+                    <p>Comprehensive management and reporting tools</p>
+                </div>
+                <div class="feature-card">
+                    <i class="icon-education"></i>
+                    <h3>Educational Resources</h3>
+                    <p>Informative content about stem cell donation</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="register" class="register">
+            <h2>Register as a Donor</h2>
+            <form id="donor-form" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <textarea name="medicalHistory" placeholder="Medical History" required></textarea>
+                <input type="text" name="hlaType" placeholder="HLA Type (if known)">
+                <div class="file-upload">
+                    <label for="swabReport">Upload Swab Test Report (PDF only)</label>
+                    <input type="file" id="swabReport" name="swabReport" accept=".pdf" required>
+                </div>
+                <button type="submit">Register Now</button>
+            </form>
+        </section>
+
+        <section id="stats" class="stats">
+            <h2>Our Impact</h2>
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="5000">0</span>
+                    <span class="stat-label">Registered Donors</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="1000">0</span>
+                    <span class="stat-label">Successful Matches</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="50">0</span>
+                    <span class="stat-label">Partner Hospitals</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <h2>Educational Resources</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>Articles</h3>
+                    <ul id="articles-list"></ul>
+                </div>
+                <div class="resource-card">
+                    <h3>FAQs</h3>
+                    <ul id="faqs-list"></ul>
+                </div>
+                <div class="resource-card">
+                    <h3>Videos</h3>
+                    <ul id="videos-list"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="search" class="search">
+            <h2>Patient Donor Search</h2>
+            <form id="search-form">
+                <input type="text" name="hlaType" placeholder="Enter HLA Type" required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="search-results"></div>
+        </section>
+
+        <section id="admin" class="admin">
+            <h2>Admin Access</h2>
+            <p>If you're an administrator, please log in to access the admin dashboard.</p>
+            <a href="admin-login.html" class="cta-button">Admin Login</a>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About StemConnect</h4>
+                <p>We're on a mission to save lives by connecting stem cell donors with patients in need.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#stats">Stats</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@stemconnect.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 StemConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-toggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <h3>AI Assistant</h3>
+                <button class="close-chat">&times;</button>
+            </div>
+            <div class="chatbot-messages"></div>
+            <form id="chatbot-form">
+                <input type="text" id="chatbot-input" placeholder="Type your message...">
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
